@@ -3,6 +3,7 @@ package Multimedia;
 public abstract class MMelem {
     protected String titolo;
 
+
     public MMelem(String titolo) {
         this.titolo = titolo;
     }
@@ -13,5 +14,19 @@ public abstract class MMelem {
 
     public void setTitolo(String titolo) {
         this.titolo = titolo;
+    }
+    public String printStars(int luminosita) {
+        String stars = "";
+        for (int i = 0; i < luminosita; i++) {
+            stars += "*";
+        }
+        return stars;
+    }
+    public String printExclamatives (int volume) {
+        String exclamatives = "";
+        for (int i = 0; i < volume; i++) {
+            exclamatives += "!";
+        }
+        return exclamatives;
     }
 }
