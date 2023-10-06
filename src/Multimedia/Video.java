@@ -46,6 +46,6 @@ public class Video extends Audio implements GestioneVolume,GestioneLuminosita,Ri
 
     @Override
     public void play() {
-        System.out.println("titolo: " + this.titolo + " luminosita: " + printStars(this.luminosita) + " volume: " + printExclamatives(this.volume));
+        System.out.println("titolo: " + this.getTitolo() + " luminosita: " + printStars(this.getLuminosita()) + " volume: " + printExclamatives(this.getVolume()));
     }
 }

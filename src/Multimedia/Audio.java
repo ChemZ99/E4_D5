@@ -1,7 +1,7 @@
 package Multimedia;
 
 public class Audio extends MMelem implements GestioneVolume,Riproduci {
-    protected int volume;
+    private int volume;
     protected int durata;
 
     public Audio(String titolo, int volume, int durata){
@@ -42,6 +42,6 @@ public class Audio extends MMelem implements GestioneVolume,Riproduci {
 
     @Override
     public void play() {
-        System.out.println("titolo: " + this.titolo + " volume: " + printExclamatives(this.volume));
+        System.out.println("titolo: " + this.getTitolo() + " volume: " + printExclamatives(this.getVolume()));
     }
 }

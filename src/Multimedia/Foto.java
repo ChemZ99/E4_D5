@@ -31,7 +31,7 @@ public class Foto extends MMelem implements GestioneLuminosita {
         setLuminosita(temp);
     }
 
-    private void show() {
-        System.out.println("titolo: " + this.titolo + " luminosita: " + printStars(this.luminosita));
+    public void show() {
+        System.out.println("titolo: " + this.getTitolo() + " luminosita: " + printStars(this.getLuminosita()));
     }
 }

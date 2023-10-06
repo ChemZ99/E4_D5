@@ -1,7 +1,7 @@
 package Multimedia;
 
 public abstract class MMelem {
-    protected String titolo;
+    private String titolo;
 
 
     public MMelem(String titolo) {
